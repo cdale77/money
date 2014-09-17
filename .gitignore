@@ -17,3 +17,5 @@ doc/
 .rbx
 .rvmrc
 .ruby-version
+.idea
+coverage

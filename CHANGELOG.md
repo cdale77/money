@@ -1,6 +1,13 @@
 # Changelog
 
 ## Next release
+ - Add method to round a given amount of money to the nearest possible value in cash (aka Swedish rounding).
+ - Fixed the subunit_to_unit values of the CLP and KRW currencies
+
+## 6.2.1
+ - Ensure set is loaded
+
+## 6.2.0
  - Fixes formatting error when both `thousands_separator` and `decimal_mark` was added to Money#format as options.
  - Add Money#to_i which returns the whole part of the value. i.e.
    Money.new(100, "USD").to_i # => 1
@@ -233,7 +240,7 @@ Features
    - Replace separator with decimal_mark
    - Added symbol_first and html_entity
  - Added allocation algorithm for fair(ish) splitting of money between parties
-   without loosing pennies (thanks Tobias Luetke)
+   without losing pennies (thanks Tobias Luetke)
 
 Bugfixes
 --------
